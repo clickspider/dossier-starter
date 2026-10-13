@@ -24,3 +24,10 @@ Claude: set up this dossier WITH the user. Ask one short question at a time and 
 Tell the user: "Done. Close this chat, open a new one in ~/dossier (`cd ~/dossier && claude`), and say hi. I will start from your NOW.md."
 
 Optional, only if the user asks: a cloud backup must be a PRIVATE GitHub repo, because this folder will hold health, money and family notes.
+
+## Optional: talk to your dossier from WhatsApp
+Offer this once, after step 4. Explain the risk in one sentence: "Your WhatsApp chat becomes a remote control for this computer, and it needs an unofficial WhatsApp client that can get a number banned, so a second number is safest."
+Only if the user says yes:
+1. Clone it: `git clone https://github.com/clickspider/claude-whatsapp-relay tools/claude-whatsapp-relay`.
+2. Add `tools/` to `.gitignore`, so its config never goes into the dossier backup.
+3. Follow `tools/claude-whatsapp-relay/SETUP.md` with the user, one question at a time.
