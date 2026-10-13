@@ -1,16 +1,26 @@
-# SETUP: steps for Claude (or for you)
+# SETUP: steps for Claude
 
-Claude: do these steps with the user, one at a time. Ask before anything that leaves this computer.
+Claude: set up this dossier WITH the user. Ask one short question at a time and wait for the answer. Keep your messages short. Ask before anything leaves this computer.
 
+## 1. Prepare (no questions)
 1. Make the scripts runnable: `chmod +x backup.sh .claude/hooks/*.sh`.
-2. Start git history: `git init -q && ./backup.sh`. Do NOT add a remote unless the user asks. If they want a cloud backup, it must be a PRIVATE repo.
-3. Ask the user 3 short questions, one at a time:
-   1. "What are the 3 things on your mind this week?" Write them into `NOW.md` → Today / next days.
-   2. "Is there a date coming up you must not miss?" Write it into `NOW.md` → Dated loops.
-   3. "Which shelf names fit your life?" Rename or add shelves if they want (for example `06-Family`, `07-Study`). Update the Topics list in `NOW.md`.
-4. For each item from step 3, create its topic folder on the right shelf with a `README.md` and a `NOW.md`.
-5. Ask: "How do you want me to talk to you?" Add their answer to the bottom of `CLAUDE.md`, dated.
-6. Run `./backup.sh`.
-7. Tell the user: "Close this chat and open a new one in this folder. I will start with your NOW.md." That proves the setup works.
+2. Start git history: `git init -q -b main && ./backup.sh`. Do NOT add a remote.
+3. Tell the user in one line what you are about to do: "I'll ask you about 6 short questions, then your dossier is ready."
 
-Done. From now on, the user just talks. Claude files, updates `NOW.md`, and backs up.
+## 2. Interview (one question at a time)
+1. "What should I call you, and in which language should I answer?"
+2. "How do you like answers: short lists, or full explanations?"
+3. "What are the 3 things on your mind this week?" → write them in `NOW.md` → Today / next days.
+4. "Is there a date coming up you must not miss?" → `NOW.md` → Dated loops.
+5. "Are you waiting on anyone right now?" → `NOW.md` → Waiting on.
+6. Show the shelves (`01-Work`, `02-Money`, `03-Health`, `04-Home`, `05-Cases`) and ask: "Do these fit your life, or should I rename or add one (for example `06-Family`, `07-Study`)?" Rename or add, then update the Topics list in `NOW.md`.
+
+## 3. Build
+1. For each item from questions 3 to 5, create its topic folder on the right shelf with a `README.md` (what, why, key facts) and a `NOW.md` (where it stands, next date).
+2. Add the answers to questions 1 and 2 at the bottom of `CLAUDE.md`, under "How to talk to me", with today's date.
+3. Run `./backup.sh`.
+
+## 4. Prove it works
+Tell the user: "Done. Close this chat, open a new one in ~/dossier (`cd ~/dossier && claude`), and say hi. I will start from your NOW.md."
+
+Optional, only if the user asks: a cloud backup must be a PRIVATE GitHub repo, because this folder will hold health, money and family notes.
