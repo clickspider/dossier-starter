@@ -2,7 +2,7 @@
 
 A second brain for Claude Code that lives on your own computer. Plain markdown folders, git for history, two small hooks. No extra app, no account, no subscription on top of Claude.
 
-Guide: https://www.danielfrey.me/claude-second-brain/
+Guide: https://www.danielfrey.me/guides/claude-second-brain/
 
 ## What you get
 1. **Shelves:** `01-Work`, `02-Money`, `03-Health`, `04-Home`, `05-Cases`, `_archive`. Every topic gets one home.
