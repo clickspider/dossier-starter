@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" font-family="ui-sans-serif, system-ui, -apple-system, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#4dc4bf"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="760" rx="24" fill="#0c0f12"/>
+  <text x="60" y="80" fill="#8e97a1" font-size="24">How every new chat starts</text>
+
+  <g>
+    <rect x="60" y="120" width="500" height="250" rx="16" fill="#12161a" stroke="#343c45" stroke-width="2"/>
+    <circle cx="112" cy="176" r="26" fill="#113330"/><text x="112" y="186" fill="#4dc4bf" font-size="26" font-weight="700" text-anchor="middle">1</text>
+    <text x="160" y="186" fill="#e6e9ec" font-size="32" font-weight="600">You open a chat</text>
+    <text x="96" y="250" fill="#aab2bb" font-size="24">In your dossier folder, in the</text>
+    <text x="96" y="286" fill="#aab2bb" font-size="24">terminal, the desktop app or</text>
+    <text x="96" y="322" fill="#aab2bb" font-size="24">your editor.</text>
+  </g>
+  <g>
+    <rect x="640" y="120" width="500" height="250" rx="16" fill="#12161a" stroke="#343c45" stroke-width="2"/>
+    <circle cx="692" cy="176" r="26" fill="#113330"/><text x="692" y="186" fill="#4dc4bf" font-size="26" font-weight="700" text-anchor="middle">2</text>
+    <text x="740" y="186" fill="#e6e9ec" font-size="32" font-weight="600">Hooks hand it over</text>
+    <text x="676" y="250" fill="#aab2bb" font-size="24">NOW.md (where you left off)</text>
+    <text x="676" y="286" fill="#aab2bb" font-size="24">and today's date, before you</text>
+    <text x="676" y="322" fill="#aab2bb" font-size="24">type a word.</text>
+  </g>
+  <g>
+    <rect x="640" y="450" width="500" height="250" rx="16" fill="#12161a" stroke="#343c45" stroke-width="2"/>
+    <circle cx="692" cy="506" r="26" fill="#113330"/><text x="692" y="516" fill="#4dc4bf" font-size="26" font-weight="700" text-anchor="middle">3</text>
+    <text x="740" y="516" fill="#e6e9ec" font-size="32" font-weight="600">Claude reads the rules</text>
+    <text x="676" y="580" fill="#aab2bb" font-size="24">CLAUDE.md: how to file, how</text>
+    <text x="676" y="616" fill="#aab2bb" font-size="24">to talk to you, what to never</text>
+    <text x="676" y="652" fill="#aab2bb" font-size="24">do without asking.</text>
+  </g>
+  <g>
+    <rect x="60" y="450" width="500" height="250" rx="16" fill="#113330" stroke="#4dc4bf" stroke-width="2.5"/>
+    <circle cx="112" cy="506" r="26" fill="#4dc4bf"/><text x="112" y="516" fill="#062321" font-size="26" font-weight="700" text-anchor="middle">4</text>
+    <text x="160" y="516" fill="#e6e9ec" font-size="32" font-weight="600">It picks up the thread</text>
+    <text x="96" y="580" fill="#cfe9e7" font-size="24">No re-explaining. It answers</text>
+    <text x="96" y="616" fill="#cfe9e7" font-size="24">from where you stopped, and</text>
+    <text x="96" y="652" fill="#cfe9e7" font-size="24">updates NOW.md as you go.</text>
+  </g>
+
+  <g stroke="#4dc4bf" stroke-width="3" fill="none" marker-end="url(#arr)">
+    <path d="M568 245H630"/>
+    <path d="M890 378V440"/>
+    <path d="M632 575H570"/>
+  </g>
+</svg>
